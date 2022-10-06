@@ -19,11 +19,11 @@ namespace ClassLibrary1
 
         public void DisplayCategory()
         {
-            int lower_limit = 0;
+            int lowerLimit = 0;
             foreach (int i in Enum.GetValues(typeof(Category)))
             {
-                Console.WriteLine("Category: " + Enum.GetName(typeof(Category), i) + " has the range of " + lower_limit + " - " + i);
-                lower_limit = i + 1;
+                Console.WriteLine("Category: " + Enum.GetName(typeof(Category), i) + " has the range of " + lowerLimit + " - " + i);
+                lowerLimit = i + 1;
             }
         }
 
